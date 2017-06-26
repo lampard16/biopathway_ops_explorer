@@ -1,0 +1,20 @@
+<ul class="breadcrumb hidden-xs">
+	<li>{{#link-to "index"}}Home{{/link-to}}</li>
+	<li>Ontologies</li>
+	<li class="active">{{selectedTree}}</li>
+</ul>
+<div class="row">
+	<div class="col-xs-12 col-sm-3">
+		<h3>Select an ontology</h3>
+		{{view "select"
+		content=treeTypes
+		prompt="Please select a target class"
+		value=defaultTree
+		multiple=false
+		selection=selectedTree}}
+	</div>
+	<!-- If the tree tries to pop off the right edge of the screen (fairly likely) then add scroll using table-responsive -->
+	<div id="ontology-container" class="table-responsive col-xs-12 col-sm-9 big-padding-top">
+		{{view 'treeBranch' content=controller.content}}
+	</div>
+</div>

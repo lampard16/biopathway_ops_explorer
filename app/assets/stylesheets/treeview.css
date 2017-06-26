@@ -1,0 +1,126 @@
+/* Tree View CSS */
+div.enzymeNameHeader {
+  width:280px;
+  border-bottom: 1px solid LightGray;
+  display: inline-block;
+  padding-left: 5px;
+}
+div.enzymeURIHeader {
+  width:300px;
+  border-bottom: 1px solid LightGray;
+  display: inline-block;
+  padding-left: 5px;
+  margin-left: 2px;
+}
+img.single-enzyme-icon {
+  vertical-align: top;
+  padding-right: 2px;
+}
+img.folder-open {
+  vertical-align: top;
+  padding-right: 2px;
+}
+i.fetching-data {
+  vertical-align: top;
+  margin-right: 6px;
+}
+img.folder-closed {
+  vertical-align: top;
+  padding-right: 2px;
+}
+a.enzymeName {
+  /* width: 350px; */
+  display: inline-block;
+  padding-left:100px;
+}
+div.enzymeURI {
+  vertical-align: top;
+  width: 230px;
+  display: inline-block;
+}
+div.indentLevel1 {
+
+}
+div.indentLevel2 {
+	margin-left: 20px;
+}	
+div.indentLevel3 {
+	margin-left: 40px;
+}
+div.indentLevel4 {
+	margin-left: 60px;
+}
+div.indentLevel5 {
+	margin-left: 80px;
+}
+div.indentLevel6 {
+	margin-left: 100px;
+}
+div.indentLevel7 {
+	margin-left: 120px;
+}
+div.indentLevel8 {
+	margin-left: 140px;
+}
+div.indentLevel9 {
+	margin-left: 160px;
+}
+div.indentLevel10 {
+	margin-left: 180px;
+}
+div.indentLevel11 {
+	margin-left: 200px;
+}
+div.indentLevel12 {
+	margin-left: 220px;
+}
+div.indentLevel13 {
+	margin-left: 240px;
+}
+
+div.indentLevel2 a.enzymeName {
+	margin-left: -20px;
+}
+div.indentLevel3 a.enzymeName {
+	margin-left: -40px;
+}
+div.indentLevel4 a.enzymeName {
+	margin-left: -60px;
+}
+div.indentLevel5 a.enzymeName {
+	margin-left: -80px;
+}
+div.indentLevel6 a.enzymeName {
+	margin-left: -100px;
+}
+div.indentLevel7 a.enzymeName {
+	margin-left: -120px;
+}
+div.indentLevel8 a.enzymeName {
+	margin-left: -140px;
+}
+div.indentLevel9 a.enzymeName {
+	margin-left: -160px;
+}
+div.indentLevel10 a.enzymeName {
+	margin-left: -180px;
+}
+div.indentLevel11 a.enzymeName {
+	margin-left: -20px;
+}
+div.tree-node-icon img.single-enzyme-icon {
+	display: inline-block;
+}
+div.highlight-on {
+	background-color: LightBlue;
+}
+div.hidden {
+	display:none;
+}
+#ontology-container {
+    /* width: 80%; */
+}
+.treerow {
+    width: 300px;
+}
+/* End of Tree View CSS */

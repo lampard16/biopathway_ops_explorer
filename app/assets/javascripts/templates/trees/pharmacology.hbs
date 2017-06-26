@@ -1,0 +1,17 @@
+<ul class="breadcrumb hidden-xs">
+	<li>{{#link-to "index"}}Home{{/link-to}}</li>
+	<li>Trees</li>
+	<li class="active">Pharmacology</li>
+</ul>
+
+{{partial "trees/treePharmacologyFilters"}}
+<div class="goto-button" id="top"><button class="btn btn-default btn-sm" {{action "goToTop"}} title="Click to return to the top of the table">Go to top</button></div>
+{{partial "trees/treePharmacologySummary"}}
+{{#if notEmpty}}
+<div class="table-responsive">
+	<table class="mytable" style="border-spacing: 0;">
+		{{partial "trees/treePharmacologyTableHeader"}}
+		{{partial "trees/treePharmacologyTableBody"}}
+	</table>
+</div>
+{{/if}}

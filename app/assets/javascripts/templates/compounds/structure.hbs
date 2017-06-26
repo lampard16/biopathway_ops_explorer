@@ -1,0 +1,19 @@
+{{partial "compounds/compoundStructureFiltersModal"}}
+<div class="goto-button" id="top">
+	<button class="btn btn-default btn-sm" {{action "goToTop"}} title="Click to return to the top of the table">Go to top</button>
+</div>
+<ul class="breadcrumb hidden-xs">
+	<li>{{#link-to "index"}}Home{{/link-to}}</li>
+	<li class="active">Compound Structure</li>
+	<li>{{origSmilesValue}}</li>
+</ul>
+
+<div class="huge-margin-bottom">
+	{{partial "compounds/structureSearchOptions"}}
+</div>
+<div class="table-responsive">
+	<table class="mytable">
+		{{partial "compounds/compoundStructureTableHeader"}}
+		{{partial "compounds/compoundStructureTableBody"}}
+	</table>
+</div>

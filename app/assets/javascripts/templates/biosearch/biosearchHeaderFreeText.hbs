@@ -1,0 +1,10 @@
+<div class="form-inline">
+  <form  id="searchform"  style="margin-bottom:0px;">
+    <input type="hidden" style="display:none" id="endpoint" class="span5" value="http://webservice.wikipathways.org/findPathwaysByText" type="text">
+   <input  type="hidden" style="display:none" id="charge"  value=-1000 size="10" type="text">
+   <input  type="hidden" style="display:none" id="distance"  value=100 size="10" type="text">
+   {{input type="text" classNames="form-control small-margin-bottom"  title="Enter a SMILES string and then click the button to search for it" id="pathway_id" value="glycine" size="35" tabindex="1" autofocus="true" placeholder="Search..." style="margin:10px 10px 10px 10px;"}}  
+    <button class="btn" type="button" onclick="exec()">Query</button>
+          <button class="btn" type="button" onclick="exec_offline()">Use cache</button>    
+  </form>
+</div>

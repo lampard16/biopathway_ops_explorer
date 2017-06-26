@@ -1,0 +1,14 @@
+{
+  "name": "explorer2",
+  "version": "0.9.0",
+  "devDependencies": {
+    "handlebars": "1.3.0",
+    "karma": "0.12.8",
+    "karma-chrome-launcher": "^0.1.7",
+    "karma-firefox-launcher": "^0.1.3",
+    "karma-phantomjs-launcher": "0.1.4",
+    "qunitjs": "^1.17.0",
+    "karma-qunit": "0.1.4",
+    "karma-ember-preprocessor": "^1.6.1"
+  }
+}

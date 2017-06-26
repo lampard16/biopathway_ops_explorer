@@ -1,0 +1,35 @@
+<div class="col-xs-12 col-sm-9 col-sm-offset-3 big-margin-bottom">
+	<!-- Show as buttons on larger screens -->
+	<div class="hidden-xs hidden-sm">
+		<span class="button-group" data-toggle="buttons">
+			<label {{action 'enableProvenance'}} class="small-margin-bottom btn btn-default">
+				<input type="radio" name="options" id="option1" checked>Show provenance
+			</label>
+			<label {{action 'disableProvenance'}} class="small-margin-bottom btn btn-default active">
+				<input type="radio" name="options" id="option2">Hide provenance
+			</label>
+		</span>
+		{{#if threeDeeEnabled}}{{#if hasPDB}}<button {{action 'drawProtein'}} {{bind-attr class=":btn :btn-default :small-margin-bottom"}} title="Visualize this target in 3D">3D</button>{{/if}}{{/if}}
+		{{#if model.hasPharmacology}}{{#link-to "targets.pharmacology" (query-params uri=model.URI) class="btn btn-default small-margin-bottom" }}Pharmacology<span class="badge small-margin-left">{{model.pharmacologyRecords}}</span>{{/link-to}}{{/if}}
+		{{#if model.hasPathways}}{{#link-to "targets.pathways" (query-params uri=model.URI) class="btn btn-default small-margin-bottom" }}Pathways<span class="badge small-margin-left">{{model.pathwayRecords}}</span>{{/link-to}}{{/if}}
+		{{#if model.hasDiseases}}{{#link-to "targets.diseases" (query-params uri=model.URI) class="btn btn-default small-margin-bottom"}}Diseases<span class="badge small-margin-left">{{model.diseaseRecords}}</span>{{/link-to}}{{/if}}
+
+	</div>
+	<!-- Show as dropdown on smaller screens -->
+	<div class="hidden-md hidden-lg">
+		<div class="btn-group">
+			<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+				Options <span class="caret"></span>
+			</button>
+			<ul class="dropdown-menu" role="menu">
+				<li {{bind-attr class="showProvenance:disabled:"}}><a href="#" {{action 'enableProvenance'}}>Show provenance</a></li>
+				<li {{bind-attr class="showProvenance::disabled"}}><a href="#" {{action 'disableProvenance'}}>Hide provenance</a></li>
+				<li class="divider"></li>
+				{{#if threeDeeEnabled}}{{#if model.hasPDB}}<li><a href="#" {{action 'drawProtein'}} title="Visualize this target in 3D">View in 3D</a></li>{{/if}}{{/if}}
+				<li>{{#link-to "targets.pharmacology" (query-params uri=model.URI)}}Pharmacology<span class="badge small-margin-left">{{model.pharmacologyRecords}}</span>{{/link-to}}</li>
+				{{#if model.hasPathways}}<li>{{#link-to "targets.pathways" (query-params uri=model.URI)}}Pathways<span class="badge small-margin-left">{{model.pathwayRecords}}</span>{{/link-to}}</li>{{/if}}
+				{{#if model.hasDiseases}}<li>{{#link-to 'targets.diseases' (query-params uri=model.URI)}}Diseases<span class="badge small-margin-left">{{model.diseaseRecords}}</span>{{/link-to}}</li>{{/if}}
+			</ul>
+		</div>
+	</div>
+</div>

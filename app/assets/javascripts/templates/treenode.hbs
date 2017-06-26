@@ -1,0 +1,20 @@
+{{#if view.fetchingData}}
+    <i class="fa fa-spinner fa-spin fetching-data"></i>
+{{else}}
+    {{#if view.node}}
+    {{getImage "table.png" null null "single-enzyme-icon"}}
+    {{else}}
+        {{#if view.opened}}
+	<span title="Click to close" {{action "expand" target="view" }}>{{getImage "folder_go.png" null null "folder-open"}}</span>
+        {{else}}
+            {{#if view.closed}}
+	    <span title="Click to open and view any children" {{action "expand" target="view" }}>{{getImage "folder.png" null null "folder-closed"}}</span>
+            {{else}}
+	        {{#if view.branch}}
+		<span title="Click to open and view any children" {{action "expand" target="view" }}>{{getImage "folder.png" null null "folder-closed"}}</span>
+	        {{/if}}
+            {{/if}}
+        {{/if}}
+    {{/if}}
+{{/if}}
+<div class="enzymeURI">{{#if view.content.name}}{{view.content.name}}{{else}}<span class="muted">Label unknown</span>{{/if}} ({{enzymeECNumber view.content.uri}})</div>{{#link-to 'trees.pharmacology' (query-params uri=view.content.uri) class="push-right btn btn-default btn-xs" title="Click to view pharmacology"}}<i class="fa fa-list"></i>{{/link-to}}
