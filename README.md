@@ -19,31 +19,56 @@ Adding and Updating files
 
 Following files are adding files to Open PHACTS Explorer.
 
-/app/assets/javascripts/combined.js                                 //OPS API
-/app/assets/javascripts/biosearchRoutes.js                          //setting up biosearch route which is the important view part
-/app/assets/javascripts/d3sparql.js                                 //response for getting remote data and visualizing
-/app/assets/javascripts/mycompound.js                               //making chemical report
-/app/assets/javascripts/d3-tip.min.js                               //d3-tip
-/app/assets/javascripts/d3-hierarchy.v1.min.js                      //d3-hierarchy plug for packing in d3sparql
-/app/assets/javascripts/controllers/biosearchController.js          //the controller of biosearch
-/app/assets/javascripts/controllers/biosearchIndexController.js     //the controller of biosearchIndex
-/app/assets/javascripts/controllers/math.min.js                     //math functions
+/app/assets/javascripts/combined.js                                 
+//OPS API
 
-/app/assets/javascripts/templates/biosearch/*                       //the templates
+/app/assets/javascripts/biosearchRoutes.js                          
+//setting up biosearch route which is the important view part
 
-/app/controllers/biosearch_controller.rb                            //the ruby file for biosearch controller
+/app/assets/javascripts/d3sparql.js                                 
+//response for getting remote data and visualizing
 
-/app/views/layouts/biosearch.html.erb                               //the view layout of biosearch
+/app/assets/javascripts/mycompound.js                               
+//making chemical report
 
-/app/views/biosearch/*                                              //the view files for biosearch
+/app/assets/javascripts/d3-tip.min.js                               
+//d3-tip
+
+/app/assets/javascripts/d3-hierarchy.v1.min.js                      
+//d3-hierarchy plug for packing in d3sparql
+
+/app/assets/javascripts/controllers/biosearchController.js         
+//the controller of biosearch
+
+/app/assets/javascripts/controllers/biosearchIndexController.js     
+//the controller of biosearchIndex
+
+/app/assets/javascripts/controllers/math.min.js                     
+//math functions
+
+
+/app/assets/javascripts/templates/biosearch/*                       
+//the templates
+
+/app/controllers/biosearch_controller.rb                            
+//the ruby file for biosearch controller
+
+/app/views/layouts/biosearch.html.erb                               
+//the view layout of biosearch
+
+/app/views/biosearch/*                                              
+//the view files for biosearch
 
 Following files are updating files to Open PHACTS Explorer.
 
-/app/assets/javascripts/routes.js                                   //updating routes on biosearch
+/app/assets/javascripts/routes.js                                   
+//updating routes on biosearch
 
-/app/assets/javascripts/routeSetup.js                               //updating routeSetup on biosearch
+/app/assets/javascripts/routeSetup.js                               
+//updating routeSetup on biosearch
 
-/app/assets/javascripts/application.js                              //stopping turbolink and uploading corresponding files
+/app/assets/javascripts/application.js                              
+//stopping turbolink and uploading corresponding files
 
 
 
